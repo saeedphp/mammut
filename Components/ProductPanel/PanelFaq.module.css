@@ -1,0 +1,32 @@
+.titleWrapper{
+    background-color: #E5E5E5 !important;
+    width: 100%;
+    
+    text-align: right;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-top: -2rem;
+    z-index: 10;
+    position: relative;
+}
+
+.faq{
+    width: 100%;
+    padding: 2rem !important;
+    max-width: 75rem;
+    margin: 5rem auto;
+}
+
+.icon{
+    background: url(../../public/assets/images/faq-icon.png) no-repeat;
+    position: relative;
+    background-position: right;
+    background-size: contain;
+    padding-right: 2rem;
+}
+
+@media (max-width: 768px) {
+    .faq{
+        padding: 1rem !important;
+    }
+}

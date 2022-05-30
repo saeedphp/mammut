@@ -1,0 +1,59 @@
+﻿$colorRed: rgb(230, 0, 0);
+$colorBlue: rgb(0, 0, 102);
+$colorBody: #fafafa;
+$colorText: #000;
+$white: #fff;
+
+$font: iranSans;
+$font-english: michroma;
+
+@font-face {
+    font-family: iranSans;
+    font-style: normal;
+    font-weight: normal;
+    src: url('../public/assets/fonts/PinkSans.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: michroma;
+    font-style: normal;
+    font-weight: normal;
+    src: url('../public/assets/fonts/Michroma-Regular.ttf') format('truetype');
+}
+
+
+@mixin xl {
+    @media (min-width: 1279px) and (max-width: 1680px) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (max-width: 1280px) and (min-width: 991px) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin xs {
+    @media (max-width: 580px) {
+        @content;
+    }
+}
+
+@mixin xxs {
+    @media (max-width: 400px) {
+        @content;
+    }
+}

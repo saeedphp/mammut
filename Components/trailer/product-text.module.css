@@ -1,0 +1,30 @@
+.productTextT{
+    width: 50%;
+    position: relative;
+    text-align: right;
+    display: flex;
+    align-items: center;
+}
+
+.productTextT h4{
+    font-size: 2rem;
+    border-bottom: 2px solid #000;
+    width: fit-content;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.productTextT h6{
+    text-align: justify;
+    line-height: 30px;
+}
+
+@media (max-width: 768px) {
+    .productTextT{
+        width: 100%;
+    }
+    .productTextT h4{
+        font-size: 1.5rem;
+    }
+}

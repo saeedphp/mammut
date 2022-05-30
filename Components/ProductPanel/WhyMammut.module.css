@@ -1,0 +1,128 @@
+.description{
+    max-width: 90rem;
+    margin: 1rem auto;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem;
+}
+
+.description .imgWrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem;
+    position: relative;
+    margin-right: 2rem;
+}
+
+.description .imgWrapper .backward-color{
+    width: 80% !important;
+    height: 80% !important;
+    background: #C80C0F;
+    position: absolute !important;
+    right: 0;
+    bottom: 0;
+}
+
+.description .imgWrapper h2{
+    color: #fff;
+    position: absolute;
+    z-index: 4;
+    background: #000066;
+    padding: 1.5rem 3rem;
+    font-size: 1.8rem;
+    top: 4rem;
+    right: 1rem;
+    border-radius: 16px;
+}
+
+.description .imgWrapper span{
+    border-radius: 32px;
+    overflow: hidden;
+    padding: 2rem;
+}
+
+/*.description .imgWrapper span::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    display: block;
+    top: 0;
+    z-index: 3;
+}*/
+
+.description .info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.description .info .title{
+    font-weight: bold;
+    border-bottom: 2px solid #808080;
+    padding-bottom: 1rem;
+    width: fit-content;
+    color: #000066;
+}
+
+.description .info p{
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 2.2rem;
+}
+
+.description .info li span{
+    width: 29px;
+    height: 29px;
+    background: url(../../public/assets/images/pin.png) no-repeat;
+    display: block;
+    margin-left: 1rem;
+}
+
+@media (max-width: 1280px) {
+    .description .imgWrapper h2{
+        font-size: 1.5rem;
+        padding: 0.75rem 2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .description{
+        padding: 1rem 1rem;
+        flex-wrap: wrap;
+        max-width: 50rem;
+    }
+    .description .imgWrapper{
+        order: -1;
+    }
+}
+
+@media (max-width: 768px){
+    .description .imgWrapper .backward-color{
+        bottom: -1rem;
+        right: -1rem;
+    }
+    .description .imgWrapper{
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+    .description .imgWrapper span{
+        padding: 0;
+    }
+    .description .imgWrapper h2{
+        font-size: 1.2rem;
+        padding: 1rem;
+        border-radius: 1rem 0 0 1rem;
+        max-width: calc(100% - 1rem);
+        right: 0rem;
+        top: 1.75rem;
+    }
+    .description .info .title{
+        font-size: 1.3rem;
+    }
+}

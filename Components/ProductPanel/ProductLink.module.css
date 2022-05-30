@@ -1,0 +1,28 @@
+.list{
+    margin: 2rem auto;
+    width: 100%;
+    text-align: center;
+    max-width: 90rem;
+    border-bottom: 1px solid red;
+    padding: .5rem 0;
+}
+
+.list .items{
+    display: inline-block;
+    margin: 0 2rem;
+}
+
+.list .items a{
+    display: flex;
+}
+
+.list .items a > div{
+    width: 22px;
+}
+
+@media (max-width: 768px) {
+    .list .items{
+        display: block;
+        margin: .5rem auto 1.5rem;
+    }
+}

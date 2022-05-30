@@ -1,0 +1,9 @@
+.attrCard{
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
