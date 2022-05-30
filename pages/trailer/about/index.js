@@ -1,5 +1,4 @@
 import { NextSeo } from "next-seo";
-import Counter from "../../../Components/About/Counter";
 import Experiences from "../../../Components/About/Experiences";
 import AboutHeader from "../../../Components/About/Header";
 import Highlights from "../../../Components/About/Highlights";
@@ -8,7 +7,6 @@ import Dream from "../../../Components/About/Dream";
 import Comments from "../../../Components/About/Comments";
 import FAQ from "../../../Components/About/FAQ";
 import Clients from "../../../Components/Home/HomeClients";
-import BlogPage from "../blogs/[blogId]";
 
 export default function AboutPage() {
     return (
@@ -53,7 +51,6 @@ export default function AboutPage() {
                     img="aboutContainer.jpg"
                 />
                 <Dream />
-                {/*<Counter />*/}
                 <Comments />
                 <FAQ />
                 <Clients />
