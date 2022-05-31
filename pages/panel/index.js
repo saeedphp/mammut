@@ -12,7 +12,7 @@ import HomeIntro from "../../Components/Home/HomeIntro";
 import HomeCover from "../../Components/Home/HomeCover";
 import HomeGallery from "../../Components/Home/HomeGallery";
 
-/*export default function Home() {
+export default function Home() {
     return (
         <div className="homePage">
             <NextSeo title="ساندویچ پانل‌های دنیای ماموت"/>
@@ -70,7 +70,7 @@ import HomeGallery from "../../Components/Home/HomeGallery";
           فعالیت می‌باشد كه توانسته علاوه بر تامین نیاز گسترده بازار داخلی،
           موفق‌ترین تجربه‌های صادرات به کشورهای خاورمیانه را داشته باشد."
             />
-            {/!* <WhyPanelSecond /> *!/}
+            {/* <WhyPanelSecond /> */}
             <HomeCover imgPath="panel_cover_pure.jpg"/>
             <HomeClients
                 title="مشتریان ما"
@@ -87,7 +87,7 @@ import HomeGallery from "../../Components/Home/HomeGallery";
                 btnTxt="دانلود کاتالوگ"
                 catalogTxt="کاتالوگ دنیای ماموت "
             />
-            {/!* <HomeBlog prefix="conex" /> *!/}
+            {/* <HomeBlog prefix="conex" /> */}
             <HomeFAQ title="پرسش‌های متداول" prefix="panel"/>
             <HomeGallery
                 title="پروژه های ما"
@@ -103,21 +103,6 @@ import HomeGallery from "../../Components/Home/HomeGallery";
             />
         </div>
     );
-}*/
-
-export default function underConstruction() {
-        return (
-            <div className="underConstruction">
-                    <NextSeo title="  در دست ساخت..." />
-
-                    <div className="text">
-                            <i className="fad fa-construction" />
-                            <h1>در دست ساخت...</h1>
-                    </div>
-            </div>
-        );
 }
 
-underConstruction.layout="L1";
-
-underConstruction.layout = "L1";
+Home.layout = "L1";
