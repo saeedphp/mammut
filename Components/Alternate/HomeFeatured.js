@@ -9,6 +9,7 @@ const HomeFeatured = (props) => {
   const OwlCarousel = dynamic(import("react-owl-carousel"), { ssr: false });
 
   const options = {
+    className: "slideShow",
     margin: 0,
     responsiveClass: true,
     nav: true,

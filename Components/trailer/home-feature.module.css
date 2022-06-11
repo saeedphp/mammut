@@ -1,0 +1,9 @@
+.imgWrapper{
+    width: 50% !important;
+}
+
+@media (max-width: 768px) {
+    .imgWrapper{
+        width: 100% !important;
+    }
+}

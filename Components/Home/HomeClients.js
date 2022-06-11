@@ -8,6 +8,7 @@ export default function HomeClients({title, subtitle}) {
   const OwlCarousel = dynamic(import("react-owl-carousel"), { ssr: false });
 
   const options = {
+    className: "slideShow",
     margin: 0,
     responsiveClass: true,
     nav: true,
@@ -34,7 +35,7 @@ export default function HomeClients({title, subtitle}) {
         touchDrag: false,
       },
       1440: {
-        items: 10,
+        items: 6,
         rtl: true,
         mouseDrag: false,
         touchDrag: false,
@@ -45,9 +46,9 @@ export default function HomeClients({title, subtitle}) {
     <div className="homeClients">
       <div className="title">
         <h2>{title}</h2>
-        <h6><span>
+        <h6>
           {subtitle}
-        </span></h6>
+        </h6>
       </div>
       <div className="logos">
         <OwlCarousel {...options}>

@@ -11,9 +11,6 @@ const HomeImage = (props) => {
         <Fragment>
             <div className={`alternateHomeFeatured`}>
                 <div className={`contents ${styles['img-row']}`}>
-                    <h2 className="trailer-desc">
-                        {title}
-                    </h2>
                     <div className={`${styles.container} ${direction}`}>
                         <div className={`picture ${styles.imgWrapper}`}>
                             <Image
@@ -23,6 +20,9 @@ const HomeImage = (props) => {
                             />
                         </div>
                         <p className={styles.desc}>
+                            <h2 className="trailer-desc">
+                                {title}
+                            </h2>
                             {description}
                         </p>
                     </div>

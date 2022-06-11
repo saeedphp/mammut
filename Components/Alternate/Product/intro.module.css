@@ -12,6 +12,7 @@
     padding-bottom: 1rem;
     margin-bottom: 2rem;
     width: fit-content;
+    font-size: 1.3rem;
 }
 
 .intro .link{
@@ -42,5 +43,6 @@
     }
     .intro > div{
         width: 100% !important;
+        margin: 1rem 0;
     }
 }

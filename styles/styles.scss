@@ -127,6 +127,20 @@ img {
 
   .left-sec {
     width: 50%;
+    .readMore-btn{
+      background: #000066;
+      color: #fff;
+      padding: 5px 15px;
+      border-radius: 0.5rem;
+      margin-top: .5rem;
+    }
+    .read-more{
+      max-height: 0;
+      overflow: hidden;
+    }
+    .read-more.active{
+      max-height: 300px !important;
+    }
   }
 }
 
@@ -1751,6 +1765,7 @@ header {
   /*#region Home Gallery */
   .homeGallery {
     padding: 2rem 1rem;
+    background-color: $colorBlue;
     margin: auto;
 
     .row {
@@ -1772,24 +1787,6 @@ header {
 
       h6 {
         position: relative;
-
-        &:before {
-          content: "";
-          position: absolute;
-          background: #ccc;
-          width: 100%;
-          height: 2px;
-          top: 50%;
-          right: 0;
-          left: 0;
-        }
-
-        span {
-          position: relative;
-          color: $colorRed;
-          background: $colorBody;
-          padding: 0 1rem;
-        }
       }
     }
 
@@ -2167,22 +2164,11 @@ header {
     text-align: center;
     max-width: 90rem;
     padding: 0 1rem;
-    margin: auto;
+    margin: 0 auto 3rem;
 
     .title {
       h6 {
         position: relative;
-
-        &:before {
-          content: "";
-          position: absolute;
-          background: #ccc;
-          width: 100%;
-          height: 2px;
-          top: 50%;
-          right: 0;
-          left: 0;
-        }
 
         span {
           color: #C80C0F;
@@ -2203,7 +2189,7 @@ header {
 
       .owl-carousel {
         border-radius: 1rem;
-        background-color: transparent;
+        background-color: #eee;
         position: relative;
         width: calc(100% - 2rem);
         margin: auto;
@@ -2219,8 +2205,6 @@ header {
 
         .owl-item {
           padding: 0 1rem;
-          background: rgba(204, 204, 204, 0.22);
-          margin: 0 0.5rem;
         }
 
         .owl-nav {
@@ -2356,36 +2340,52 @@ header {
   /*#region Home Catalog */
   .homeCatalog {
     text-align: right;
-    margin: 5rem auto;
+    margin: 0 auto 3rem;
+    padding-top: 0;
 
     .contents {
       align-items: center;
-      max-width: 90rem;
+      max-width: 100rem;
       margin: auto;
       display: flex;
       flex-wrap: wrap;
-
+      background-size: cover !important;
+      background-repeat: no-repeat;
+      background: url(../public/assets/images/catalog-bg.png), linear-gradient(166deg, #ffffff, #d9d9d9);
       .text {
-        h4 {
+        h2 {
           position: relative;
-          color: #C80C0F;
           width: fit-content;
-
           &:before {
             content: "";
             position: absolute;
-            width: 70%;
-            height: 3px;
+            width: 20%;
+            height: 2px;
             background: #C80C0F;
-            left: -4rem;
             top: 50%;
+            right: -5rem;
           }
+          &:after{
+            content: "";
+            position: absolute;
+            background: #C80C0F;
+            width: 20%;
+            height: 2px;
+            top: 50%;
+            left: -5rem
+          }
+        }
+        .desc{
+          font-size: 1.3rem;
         }
       }
 
       > div {
         padding: 1rem;
         width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         @include sm {
           width: 100%;
         }
@@ -6260,9 +6260,9 @@ header {
 /*#region HomePage */
 .alternateHomePage {
   > div {
-    max-width: 90rem;
+    max-width: 100rem;
     margin: 0 auto;
-    padding: 2rem 1rem 2rem;
+    padding: 2rem 0 2rem;
     @include sm {
       padding: 3rem 1rem;
     }
@@ -6400,10 +6400,11 @@ header {
       }
 
       img {
-        min-height: 15rem !important;
-        height: 20rem !important;
+        /*min-height: 15rem !important;
+        height: 20rem !important;*/
         object-fit: cover;
         border-radius: 1rem;
+        max-width: 100% !important;
         @include sm {
           min-height: 100% !important;
           height: 100% !important;
@@ -8426,6 +8427,18 @@ header {
 }
 
 @media (max-width: 768px) {
+  .homeCatalog{
+    padding: 3rem 0 !important;
+  }
+  .homePage .homeCatalog .contents .text h2{
+    font-size: 1rem;
+  }
+  .homePage .homeCatalog .contents .text h2:before{
+    right: -3rem;
+  }
+  .homePage .homeCatalog .contents .text h2:after{
+    left: -3rem;
+  }
   .homePage .whyProductPanel > div .backward-color {
     bottom: 0;
     right: .5rem;
@@ -8504,6 +8517,12 @@ header {
     position: absolute;
     right: -2rem;
     width: 2rem !important;
+  }
+}
+
+@media (min-width: 320px) {
+  .slideShow button.disabled{
+    opacity: .5 !important;
   }
 }
 

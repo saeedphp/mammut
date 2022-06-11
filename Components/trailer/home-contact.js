@@ -13,32 +13,28 @@ const HomeContact = (props) => {
     const contactTxt = props.contactTxt;
 
     return (
-      <Fragment>
-          <div className={`alternateHomeFeatured ${direction}`}>
-              <div className={`contents ${styles.wrapper}`}>
-                  <div className={styles.contactInfo}>
-                      <h2>
-                          {title}
-                      </h2>
-                      <p>
-                          {desc}
-                      </p>
-                      <Link href={btnLink}>
-                          <a className={styles.btn}>
-                              {contactTxt}
-                          </a>
-                      </Link>
-                  </div>
-                  <div className={`picture ${styles.imgWrapper}`}>
-                      <Image
-                          src={"/assets/images/" + imgPath}
-                          alt={title}
-                          layout="fill"
-                      />
-                  </div>
-              </div>
-          </div>
-      </Fragment>
+        <Fragment>
+            <div className={`alternateHomeFeatured ${direction} ${styles.box}`}>
+                <div className={styles.bg}>
+
+                </div>
+
+                <div className={styles.contactInfo}>
+                    <h2>
+                        {title}
+                    </h2>
+                    <p>
+                        {desc}
+                    </p>
+                    <Link href={btnLink}>
+                        <a className={styles.btn}>
+                            {contactTxt}
+                        </a>
+                    </Link>
+                </div>
+
+            </div>
+        </Fragment>
     );
 };
 

@@ -9,8 +9,16 @@ import HomeImage from "../../Components/trailer/home-image";
 import Image from "next/dist/client/image";
 import styles from "../../Components/trailer/home-image.module.css";
 import HomeCatalog from "../../Components/Home/HomeCatalog";
+import {useState} from "react";
 
 const HomePage = () => {
+
+    const [open, setOpen] = useState(false);
+
+    const toggle = () => {
+        setOpen(!open);
+    };
+
   return (
     <div className="alternateHomePage homePage homeTrailer">
       <NextSeo title="تريلرهای دنيای ماموت" />
@@ -19,7 +27,7 @@ const HomePage = () => {
           title="يكی ديگر از نيازمندی های اساسی توسعه صنعتی و اقتصادی در هر كشور حوزه لجستيك و زيرساخت های حمل و نقل آن است. دنيای ماموت در دهه هفتاد نخستين بار تريلرهای حمل و نقل جاده‌ای را كه سابق بر اين به روش كارگاهی و غير استاندارد ساخته می‌شدند، با آخرين تكنولوژی روز دنيا جايگزين نمود و به عنوان اولين تريلرساز استاندارد كشور با ظرفيت توليد بيش از 50 تريلر در روز محصولاتی با كيفيت و با تكنولوژی نوين توليد و روانه بازار حمل و نقل نمود. اين تريلرها كه با بهره مندی از محورها، سيستم ترمز، شيرآلات و ساير متعلقات به روز ساخته می‌شوند، علاوه بر كاهش مصرف سوخت و استهلاك خودرو و جاده، ايمني بالايی را برای تردد جاده‌ای به ارمغان می‌آورند. اين محصولات كه عيناً مطابق با آخرين استانداردهای بين المللی ساخته می‌شوند، علاوه بر تامين نياز داخل كشور به ساير كشورهای همسايه نيز صادر می‌شوند و با تردد در جاده‌های بين المللی، برند دنيای ماموت اين نام آشنا در صنعت را به جهانيان معرفی می‌نمايند."
         name="تريلرهای دنيای ماموت"
         features={["همزمان با پيشرفت تكنولوژی و ورود مفاهيم نوين مبتنی بر it ، هوشمندسازی خودروها و تريلرهای توليدی دنيای ماموت در دستور كار قرار گرفت و اين ايده منتج به تاسيس شركت شتاب تك از ديگر زيرمجموعه‌های دنيای ماموت گرديد. پياده سازی و نصب آپشن‌های هوشمند بر روی تريلرهای توليدی ما رسالت اصلی شتاب تك می‌باشد كه موجب سهولت رانندگی و استفاده روزافزون از امكانات ديجيتال در صنعت لجستيك جاده‌ای می‌گردد."]}
-        imgPath="trailer-intro.webp"
+        imgPath="trailerImg-intro.webp"
         direction="right"
       />
         <HomeCatalog
@@ -28,7 +36,7 @@ const HomePage = () => {
             }
             catalog="trailer-cataloug.pdf"
             product=" تریلر"
-            image="/assets/images/trailer-catalog.png"
+            image="/assets/images/trailer-recatalog.webp"
             btnTxt="دانلود کاتالوگ"
             catalogTxt="کاتالوگ دنیای ماموت "
         />
@@ -135,11 +143,8 @@ const HomePage = () => {
         />
         <div className={`alternateHomeFeatured`}>
             <div className={`contents ${styles['img-row']}`}>
-                <h2 className="trailer-desc">
-                    سيستم زيربندی و محور
-                </h2>
                 <div style={{direction: 'ltr'}} className="img-container">
-                    <div className={`picture`}>
+                    <div className={`picture`} style={{width: '50%'}}>
                         <Image
                             src={"/assets/images/subcategory.jpg"}
                             alt="سيستم زيربندی و محور"
@@ -147,6 +152,9 @@ const HomePage = () => {
                         />
                     </div>
                     <div style={{direction: 'rtl'}} className="left-sec" >
+                        <h2 className="trailer-desc">
+                            سيستم زيربندی و محور
+                        </h2>
                         <p>
                             در تریلرهای تولیدی ماموت از زیربندی و محور شرکت BPW , SAF استفاده می‌شود. همچنین معمولا محور جلوی تریلر دارای بالابر می‌باشد. به طور معمول سيستم ترمز كاسه‌اي در محصولات به اصطلاح off road  پيشنهاد شده كه مقاومت در برابر نيروهاي حاصل از سطوح جاده از امتيازات آن محسوب مي‌شود اما طول خط ترمز اين سيستم با ترمز ديسكي داراي تفاوت‌هايي مي‌باشد:
                         </p>
@@ -169,7 +177,7 @@ const HomePage = () => {
                         <p>
                             از ویژگی‌های عمده این دسته از محورها می‌توان به موارد زیر اشاره نمود:
                         </p>
-                        <ul>
+                        <ul className={`read-more ${open === true ? 'active' : null}`}>
                             <li>
                                 •	محافظت در برابر خوردگی در دامنه وسیع و گسترده  تا 5 برابر بیشتر از روش‌های مرسوم
                             </li>
@@ -192,6 +200,9 @@ const HomePage = () => {
                                 •	عدم نیاز به روغن کاری مکرر
                             </li>
                         </ul>
+                        <button className="readMore-btn" onClick={() => toggle()}>
+                            {open === true ? 'مطالعه کمتر' : 'مطالعه بیشتر'}
+                        </button>
                     </div>
                 </div>
             </div>

@@ -12,7 +12,7 @@ const HomeFeature = (props) => {
         <div className={`alternateHomeFeatured ${direction}`}>
             <div className="contents">
                 <ProductText name={name} features={features} />
-                <div className="picture">
+                <div className={`picture ${styles.imgWrapper}`}>
                     <Image
                         src={"/assets/images/" + imgPath}
                         alt={name}

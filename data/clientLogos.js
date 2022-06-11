@@ -27,6 +27,9 @@ import c29 from "../public/assets/images/clients/c29.png";
 import c30 from "../public/assets/images/clients/c30.jpg";
 import c31 from "../public/assets/images/clients/c31.webp";
 import c34 from "../public/assets/images/clients/c34.png";
+import c35 from "../public/assets/images/clients/ghazvin.png";
+import c36 from "../public/assets/images/clients/delpazir.png";
+import c37 from "../public/assets/images/clients/shirinasal.png";
 
 export default [
   c16,
@@ -34,7 +37,7 @@ export default [
   c24,
   c10,
   c9,
-  c14,
+  c36,
   c3,
   c19,
   c20,
@@ -50,7 +53,7 @@ export default [
   c15,
   c17,
   c18,
-  c21,
+  c35,
   c23,
   c25,
   c26,

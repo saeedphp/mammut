@@ -13,12 +13,9 @@ export default function HomeCatalog(props) {
         <div className="homeCatalog">
             <div className="contents">
                 <div className="text">
-                    <h4>
-                        {subTitle}
-                    </h4>
                     <h2>
-                      {catalogTxt}
-                        `{product}`
+                        {catalogTxt}
+                        {product}
                     </h2>
                     <h6>
                         {text}
