@@ -179,7 +179,7 @@ export default function LandingPage() {
                             </a>
                         </div>
                         <div className="continer overCard">
-                            <a href="./underConstruction">
+                            <a href="https://mammutworld.faramoujwp.ir/container/">
                                 <div className="card">
                                     <div className="picture">
                                         <Image
