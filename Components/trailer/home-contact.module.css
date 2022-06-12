@@ -40,6 +40,13 @@
     overflow: hidden;
 }
 
+.contactInfo .tel_wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .contactInfo p{
     color: #fff;
     direction: rtl;
@@ -58,10 +65,16 @@
     color: #fff !important;
     background: #c91014;
     border-radius: 8px;
-    padding: 1rem 2rem;
+    padding: .5rem 1.5rem;
 }
 
 @media (max-width: 768px) {
+    .contactInfo .tel_wrapper{
+        flex-direction: column;
+    }
+    .contactInfo .tel_wrapper > a{
+        margin-bottom: 1rem;
+    }
     .box .bg{
         height: 200px;
         background-position: center right;

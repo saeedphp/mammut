@@ -26,11 +26,16 @@ const HomeContact = (props) => {
                     <p>
                         {desc}
                     </p>
-                    <Link href={btnLink}>
-                        <a className={styles.btn}>
-                            {contactTxt}
+
+                    <div className={styles.tel_wrapper}>
+                        <a href="tel: 0214500" className={styles.btn}>
+                            021-4500
                         </a>
-                    </Link>
+                        <a href="tel: 0264500" className={styles.btn}>
+                            026-4500
+                        </a>
+                    </div>
+
                 </div>
 
             </div>

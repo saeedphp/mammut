@@ -127,18 +127,21 @@ img {
 
   .left-sec {
     width: 50%;
-    .readMore-btn{
+
+    .readMore-btn {
       background: #000066;
       color: #fff;
       padding: 5px 15px;
       border-radius: 0.5rem;
       margin-top: .5rem;
     }
-    .read-more{
+
+    .read-more {
       max-height: 0;
       overflow: hidden;
     }
-    .read-more.active{
+
+    .read-more.active {
       max-height: 300px !important;
     }
   }
@@ -198,7 +201,7 @@ img {
 
   .trailer-desc {
     text-align: justify;
-    margin-top: 2rem;
+    margin-bottom: 2rem;
     line-height: 30px;
   }
 
@@ -314,7 +317,8 @@ img {
 
   .whyProductPanel > div {
     text-align: left;
-    .backward-color{
+
+    .backward-color {
       left: -1rem;
       right: unset !important;
     }
@@ -332,14 +336,15 @@ img {
 
   .homeCatalog .contents > div {
     text-align: left;
-    h4::before{
+
+    h4::before {
       right: -4rem;
       left: unset !important;
     }
   }
 
   .homeFAQ {
-    .title{
+    .title {
       text-align: left !important;
     }
   }
@@ -359,11 +364,13 @@ img {
 
 .en__header {
   direction: ltr;
-  .logo{
+
+  .logo {
     width: 8rem;
   }
-  .headerBottom{
-    .headerMenu{
+
+  .headerBottom {
+    .headerMenu {
       left: 40% !important;
     }
   }
@@ -376,7 +383,8 @@ img {
     .footerBlock {
       h4 {
         text-align: left !important;
-        &:before{
+
+        &:before {
           left: 0;
           right: unset !important;
         }
@@ -384,7 +392,8 @@ img {
 
       ul li {
         text-align: left;
-        span{
+
+        span {
           margin-right: 1rem;
           margin-left: unset !important;
         }
@@ -1223,11 +1232,13 @@ header {
       z-index: 1000;
 
       > ul {
-        align-items: center;
+        /*align-items: center;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-between;*/
 
         li {
+          display: inline-block;
+          margin: 0 1rem;
           a * {
             position: relative !important;
           }
@@ -1366,17 +1377,13 @@ header {
         a {
           display: block;
           margin: auto;
-          padding: 0.2rem 1.8rem;
-          color: #C80C0F;
-          background: rgba(200, 12, 15, 0.25);
-          border: 1px solid rgba(200, 12, 15, 0.25);
+          padding: 0.4rem 1.8rem;
+          color: #fff;
+          background: rgb(0 0 102);
+          border: 1px solid rgb(0 0 102);
           border-radius: 10px;
           position: relative;
           z-index: 9;
-
-          &:hover {
-            padding: 0.2rem 2rem;
-          }
 
           @include xs {
             font-size: 0.7rem;
@@ -1675,6 +1682,34 @@ header {
   }
 
 }
+
+/*#region Home Page Panel */
+
+.homePanel {
+  .homeIntro:nth-child(even){
+    display: flex;
+    flex-direction: row-reverse;
+    .backward_image{
+      .backward-color{
+        right: -1rem !important;;
+      }
+    }
+  }
+  .homeGallery {
+    .title {
+      h2 {
+        color: $white !important;
+      }
+      h6{
+        span{
+          color: $white !important;;
+        }
+      }
+    }
+  }
+}
+
+/*#region Home Page Panel */
 
 /*#region Home Page */
 .homePage {
@@ -2352,10 +2387,12 @@ header {
       background-size: cover !important;
       background-repeat: no-repeat;
       background: url(../public/assets/images/catalog-bg.png), linear-gradient(166deg, #ffffff, #d9d9d9);
+
       .text {
         h2 {
           position: relative;
           width: fit-content;
+
           &:before {
             content: "";
             position: absolute;
@@ -2365,7 +2402,8 @@ header {
             top: 50%;
             right: -5rem;
           }
-          &:after{
+
+          &:after {
             content: "";
             position: absolute;
             background: #C80C0F;
@@ -2375,7 +2413,8 @@ header {
             left: -5rem
           }
         }
-        .desc{
+
+        .desc {
           font-size: 1.3rem;
         }
       }
@@ -6273,8 +6312,32 @@ header {
 
       h2 {
         font-weight: bold;
-        color: $colorBlue;
+        color: $colorText;
         font-size: 1.8rem;
+        width: fit-content;
+        margin: 1rem auto 2rem;
+        text-align: center;
+        position: relative;
+
+        &:before {
+          content: "";
+          position: absolute;
+          width: 50%;
+          height: 3px;
+          background: #e60000;
+          top: 50%;
+          right: -5rem;
+        }
+
+        &:after {
+          content: "";
+          position: absolute;
+          width: 50%;
+          height: 3px;
+          background: #e60000;
+          top: 50%;
+          left: -5rem;
+        }
       }
 
       h4 {
@@ -7005,6 +7068,7 @@ header {
     .videoWrapper {
       width: 50%;
       position: relative;
+      height: 300px;
 
       .backward-color {
         width: 100%;
@@ -8427,16 +8491,16 @@ header {
 }
 
 @media (max-width: 768px) {
-  .homeCatalog{
+  .homeCatalog {
     padding: 3rem 0 !important;
   }
-  .homePage .homeCatalog .contents .text h2{
+  .homePage .homeCatalog .contents .text h2 {
     font-size: 1rem;
   }
-  .homePage .homeCatalog .contents .text h2:before{
+  .homePage .homeCatalog .contents .text h2:before {
     right: -3rem;
   }
-  .homePage .homeCatalog .contents .text h2:after{
+  .homePage .homeCatalog .contents .text h2:after {
     left: -3rem;
   }
   .homePage .whyProductPanel > div .backward-color {
@@ -8513,7 +8577,7 @@ header {
   .right-lang {
     width: 2rem;
   }
-  header .headerBottom .headerLeft .language{
+  header .headerBottom .headerLeft .language {
     position: absolute;
     right: -2rem;
     width: 2rem !important;
@@ -8521,7 +8585,7 @@ header {
 }
 
 @media (min-width: 320px) {
-  .slideShow button.disabled{
+  .slideShow button.disabled {
     opacity: .5 !important;
   }
 }

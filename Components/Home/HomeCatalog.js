@@ -9,6 +9,7 @@ export default function HomeCatalog(props) {
     const image = props.image;
     const btnTxt = props.btnTxt;
     const catalogTxt = props.catalogTxt;
+    const suffixTxt = props.suffixTxt;
     return (
         <div className="homeCatalog">
             <div className="contents">
@@ -16,6 +17,7 @@ export default function HomeCatalog(props) {
                     <h2>
                         {catalogTxt}
                         {product}
+                        {suffixTxt}
                     </h2>
                     <h6>
                         {text}

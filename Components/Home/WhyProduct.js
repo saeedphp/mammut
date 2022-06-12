@@ -61,7 +61,7 @@ const WhyProduct = ({title, subTitle, desc, p1, p2, p3, p4, more}) => {
         <div className="backward-color">
 
         </div>
-        <Image src="/assets/images/why-sandwichPanel.jpg" alt=" " layout="fill" />
+        <Image src="/assets/images/sandwich-why.jpg" alt=" " layout="fill" />
       </div>
     </div>
   );
