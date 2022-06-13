@@ -16,8 +16,13 @@
     display: flex;
 }
 
+.list .items img{
+    object-fit: contain;
+}
+
 .list .items a > div{
-    width: 22px;
+    width: auto;
+    margin-left: .5rem;
 }
 
 @media (max-width: 768px) {

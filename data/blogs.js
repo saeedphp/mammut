@@ -6,6 +6,7 @@ import RoofSandwich from "../Components/blog/roof-sandwich";
 import Refrigeration from "../Components/blog/refrigeration";
 import CarExhbiti from "../Components/blog/car-exhbiti";
 import SmartTrailer from "../Components/blog/smart-trailer";
+import ViewCars from "../Components/blog/view-cars";
 
 export default [
 /*  {
@@ -176,10 +177,21 @@ lb/ft
     img: "1.jpg",
   },*/
   {
+    id: 14,
+    category: "اخبار",
+    subcategory: "",
+    title: "بازديد وزير صمت از دنيای ماموت؛ بزرگترين توليدكننده خودروهای سواری و تجاری",
+    time: "",
+    date: "9 خرداد 1401",
+    expert: "وزير صمت در سومين بازديد خود از شركت‌های خودروسازی در استان البرز، از دنيای ماموت يكی از بزرگترين توليدكنندگان انواع",
+    contentP1: <ViewCars />,
+    img: 'samt-vendor.webp',
+  },
+  {
     id: 13,
     category: "اخبار",
     subcategory: "",
-    title: "رونمايی از تريلر هوشمند دنيای ماموت و ورود به عرصه تكنولجستيك",
+    title: "رونمايی از تريلر هوشمند دنيای ماموت و ورود به عرصه تكنولجستيک",
     time: "",
     date: "3 خرداد 1401",
     expert: "دنیای ماموت در چهارمین نمایشگاه خودرو تهران هوشمندترین تریلر ایران را با بیش از 30 امکان مختلف معرفی کرد",

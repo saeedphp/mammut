@@ -10,6 +10,9 @@ body {
   overflow-x: hidden;
   padding: 0;
   position: relative;
+  a{
+    text-decoration: none;
+  }
 
   * {
     font-family: $font;
@@ -1322,6 +1325,11 @@ header {
         position: absolute;
         right: 2.5rem;
         width: 40px;
+      }
+      .logo{
+        > div.picture{
+          transform: scale(1.5);
+        }
       }
 
       /*.flag__lang {
