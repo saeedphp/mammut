@@ -82,12 +82,13 @@ export default function Home() {
                 text={
                     "تنوع و گستردگی را در كاتالوگ ساندویچ پانل‌های دنیای ماموت مشاهده كنید."
                 }
-                subTitle="کاتالوگ"
+                subTitle="کاتالوگ "
                 catalog="cataloug.pdf"
-                product="ساندویچ پانل‌های"
+                product=" پانل‌های "
                 image="/assets/images/homeCatalog.png"
                 btnTxt="دانلود کاتالوگ"
-                catalogTxt="کاتالوگ دنیای ماموت "
+                catalogTxt="کاتالوگ"
+                suffixTxt="های دنیای ماموت"
             />
             {/* <HomeBlog prefix="conex" /> */}
             <HomeFAQ title="پرسش‌های متداول" prefix="panel"/>
