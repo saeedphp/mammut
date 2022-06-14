@@ -84,11 +84,11 @@ export default function Home() {
                 }
                 subTitle="کاتالوگ "
                 catalog="cataloug.pdf"
-                product=" پانل‌های "
+                product=" ساندویچ پانل‌های "
                 image="/assets/images/homeCatalog.png"
                 btnTxt="دانلود کاتالوگ"
                 catalogTxt="کاتالوگ"
-                suffixTxt="های دنیای ماموت"
+                suffixTxt=" دنیای ماموت"
             />
             {/* <HomeBlog prefix="conex" /> */}
             <HomeFAQ title="پرسش‌های متداول" prefix="panel"/>
