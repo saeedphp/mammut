@@ -290,6 +290,14 @@ img {
   > .alternateHomeFeatured.right .en_dir {
     flex-direction: row-reverse;
   }
+  .homeIntro:nth-child(odd){
+    flex-direction: row-reverse;
+    > div{
+      .backward-color{
+        left: -1rem !important;
+      }
+    }
+  }
 
   .homeIntro
   > div {

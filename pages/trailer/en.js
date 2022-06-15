@@ -213,9 +213,6 @@ Color type According to RAL system
                             <p>
                                 Finally, this system reduces the uniform consumption and abrasion of the Wear pads by distributing the braking force and ultimately reduces costs.
                             </p>
-                            <button className="readMore-btn" onClick={() => toggle()}>
-                                {open === true ? 'مطالعه کمتر' : 'مطالعه بیشتر'}
-                            </button>
                         </div>
                     </div>
                 </div>
