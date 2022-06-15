@@ -30,14 +30,21 @@ export default function EnPanelHome(props) {
                 bannerImage={"homeBannerPanel.webp"}
                 btnTxt="Online Sale"
             />
-            <HomeIntro
-                title="Mammut World Sandwich Panel"
-                subTitle="Quality and innovation"
-                p1="Sandwich panel is a compound material which is produced in the form of sandwiches (layers) that the external layers are made of sheet metal (PPGI, Aluzinc or Aluminum) and also has a core made of polyurethane foam with different densities which is injected between two layers of sheet."
-                p2="This type of material is used to cover the Roof and wall of industrial halls, factories, production halls, warehouses, prefabricated buildings, portable cabins, cold storages, clean rooms, camps, temporary accommodation and etc."
-                p3="Sandwich panels are the best material of their kind in terms of lightness and insulation compared to similar covering materials. In addition to low weight and speed of execution, this product is more economical than other materials and meets all energy storage standards."
-                p4="One of the important features of polyurethane sandwich panels is their insulation against temperature and the lowest temperature transfer coefficient. For example, the temperature transfer coefficient of a 5 cm thick sandwich panel is equivalent to a 172 cm thick brick wall due to its extremely low heat transfer coefficient, which will lead to energy savings and reduced costs in the long run."
-            />
+                <HomeIntro
+                    title="Mammut World Sandwich Panel"
+                    subTitle="Quality and innovation"
+                    p1="Specialists in the world of mammoths, in continuation of innovative chemical technology in production, localized the sandwich panels that were imported from Germany in the first step, and by establishing Mehrsa Shimi Knowledge-Based Company, the raw materials required by this industry, relying on local knowledge and capacities. Have produced domestically, which is a big leap in this area."
+                    img= "A4 _2 (1).jpg"
+                />
+                <HomeIntro
+                    title="Application of sandwich panels"
+                    subTitle="Quality and innovation"
+                    p1="Sandwich panel is a compound material which is produced in the form of sandwiches (layers) that the external layers are made of sheet metal (PPGI, Aluzinc or Aluminum) and also has a core made of polyurethane foam with different densities which is injected between two layers of sheet."
+                    p2="This type of material is used to cover the Roof and wall of industrial halls, factories, production halls, warehouses, prefabricated buildings, portable cabins, cold storages, clean rooms, camps, temporary accommodation and etc."
+                    p3="Sandwich panels are the best material of their kind in terms of lightness and insulation compared to similar covering materials. In addition to low weight and speed of execution, this product is more economical than other materials and meets all energy storage standards."
+                    p4="One of the important features of polyurethane sandwich panels is their insulation against temperature and the lowest temperature transfer coefficient. For example, the temperature transfer coefficient of a 5 cm thick sandwich panel is equivalent to a 172 cm thick brick wall due to its extremely low heat transfer coefficient, which will lead to energy savings and reduced costs in the long run."
+                    img= "blogs/sandwich/wall sandwich panel (2).jpg"
+                />
 
             <HomeNature
                 title="Protecting the environment is protecting life."

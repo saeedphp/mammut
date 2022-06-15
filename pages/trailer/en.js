@@ -9,8 +9,16 @@ import HomeImage from "../../Components/trailer/home-image";
 import Image from "next/dist/client/image";
 import styles from "../../Components/trailer/home-image.module.css";
 import HomeCatalog from "../../Components/Home/HomeCatalog";
+import {useState} from "react";
 
 const TrailerEn = () => {
+
+    const [open, setOpen] = useState(false);
+
+    const toggle = () => {
+        setOpen(!open);
+    };
+
     return (
         <div className="alternateHomePage homePage homeTrailer enPage">
             <NextSeo title="Mammut World Trailers" />
@@ -27,10 +35,11 @@ const TrailerEn = () => {
                     "See the variety of Mammut World trailers."
                 }
                 catalog="trailer-cataloug.pdf"
-                product="Trailer"
+                product="Trailer catalog"
                 image="/assets/images/trailer-catalog.png"
-                btnTxt="Download Catalog"
-                catalogTxt="Mammut World Catalog "
+                btnTxt="ِDowmload"
+                catalogTxt="Download "
+                suffixTxt=" Mammut World"
             />
             <HomeContact
                 title="Contact us"
@@ -110,11 +119,8 @@ Color type According to RAL system
             />
             <div className={`alternateHomeFeatured`}>
                 <div className={`contents ${styles['img-row']}`}>
-                    <h2 className="trailer-desc">
-                        Assembly Line Production
-                    </h2>
                     <div style={{direction: 'rtl'}} className="img-container">
-                        <div className={`picture`}>
+                        <div className={`picture trailerImg`} style={{width: '50%'}}>
                             <Image
                                 src={"/assets/images/subcategory.jpg"}
                                 alt="سيستم زيربندی و محور"
@@ -122,6 +128,9 @@ Color type According to RAL system
                             />
                         </div>
                         <div style={{direction: 'ltr',textAlign: 'left'}} className="left-sec" >
+                            <h2 className="trailer-desc">
+                                Assembly Line Production
+                            </h2>
                             <p>
                                 In this stage, all assembly parts on the product are installed as follows:
                             </p>
@@ -158,11 +167,6 @@ Color type According to RAL system
                             <p>
                                 Final Control
                             </p>
-                            <ul>
-                                <li>
-                                    •	In this Stage , Color and all the accessories are controlled by quality control specialists.
-                                </li>
-                            </ul>
                         </div>
                     </div>
                 </div>
@@ -170,11 +174,8 @@ Color type According to RAL system
 
             <div className={`alternateHomeFeatured`}>
                 <div className={`contents ${styles['img-row']}`}>
-                    <h2 className="trailer-desc">
-                        Brake System Capabilities
-                    </h2>
                     <div style={{direction: 'rtl'}} className="img-container">
-                        <div className={`picture`}>
+                        <div className={`picture trailerImg`} style={{width: '50%'}}>
                             <Image
                                 src={"/assets/images/subcategory.jpg"}
                                 alt="سيستم زيربندی و محور"
@@ -182,6 +183,9 @@ Color type According to RAL system
                             />
                         </div>
                         <div style={{direction: 'ltr',textAlign: 'left'}} className="left-sec" >
+                            <h2 className="trailer-desc">
+                                Brake System Capabilities
+                            </h2>
                             <p>
                                 The Braking System used in Mammut World has the following capabilities:
                             </p>
@@ -209,6 +213,9 @@ Color type According to RAL system
                             <p>
                                 Finally, this system reduces the uniform consumption and abrasion of the Wear pads by distributing the braking force and ultimately reduces costs.
                             </p>
+                            <button className="readMore-btn" onClick={() => toggle()}>
+                                {open === true ? 'مطالعه کمتر' : 'مطالعه بیشتر'}
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -216,11 +223,8 @@ Color type According to RAL system
 
             <div className={`alternateHomeFeatured`}>
                 <div className={`contents ${styles['img-row']}`}>
-                    <h2 className="trailer-desc">
-                        Axle System
-                    </h2>
                     <div style={{direction: 'rtl'}} className="img-container">
-                        <div className={`picture`}>
+                        <div className={`picture trailerImg`} style={{width: '50%'}}>
                             <Image
                                 src={"/assets/images/subcategory.jpg"}
                                 alt="سيستم زيربندی و محور"
@@ -228,6 +232,9 @@ Color type According to RAL system
                             />
                         </div>
                         <div style={{direction: 'ltr',textAlign: 'left'}} className="left-sec" >
+                            <h2 className="trailer-desc">
+                                Axle System
+                            </h2>
                             <p>
                                 The axles used in the Mammut world are from two world-renowned brands as follows:
                             </p>
@@ -264,54 +271,58 @@ Color type According to RAL system
                                     • more economic efficiency
                                 </li>
                             </ul>
-                            <p>
-                                Perfectly thought-out:ِ drum brake combines proven components into a successful system. Efficient, profitable and virtually maintenance-free – the SAF INTRADRUM is a winner with its powerful and precisely matched components and guarantees planning reliability right from the first kilometer.
-                            </p>
-                            <p>
-                                SAF-HOLLAND® and BPW® offers pioneering 9-t air suspension systems with special product properties – purposefully optimized for specific transport requirements and challenging transport infrastructure.
-                            </p>
-                            <ul>
-                                <li>
-                                    • Significantly lower heat transfer due to small contact areas between the INTEGRAL disc and wheel hub
-                                </li>
-                                <li>
-                                    • Targeted long-term corrosion protection also on hub caps and screw connections, wheel bolts and nuts
-                                </li>
-                                <li>
-                                    • The hub unit is a compact hub and bearings unit. It is fully factory adjusted and encapsulated the SAF/BPW
-                                </li>
-                                <li>
-                                    • With 15 large radiator-like ventilation cross-sections in the wheel flange, the INTEGRAL achieves at least 60% more ventilation cross-section compared to a design with closed wheel flange – depending on the size of the openings in the fitted wheels
-                                </li>
-                                <li>
-                                    • The specific shape of the flange disc made of a special alloy ensures not
-                                    only exact concentricity under all driving conditions – it also reduces
-                                    the umbrella effect and therefore prolongs the service life of the brake
-                                    disc and pads.
-                                </li>
-                                <li>
-                                    • Reduce the heat transfer from the disc to the hub unit and contribute to a thermal discharge of the complete head unit
-                                </li>
-                                <li>
-                                    • Shock absorber with damping characteristics designed for use in challenging road conditions
-                                </li>
-                                <li>
-                                    • Internal Air-Vent ventilation channels, cool the brake disc, avoid heat accumulation and support purposefully a low temperature management in the overall system
-                                </li>
-                                <li>
-                                    • Easier maintenance
-                                </li>
-                                <li>
-                                    • High chemical resistance
-                                </li>
-                                <li>
-                                    • less fuel consumption
-                                </li>
-                                <li>
-                                    • EThanks to the active cathodic corrosion protection combined with the zinc coating, the axle’s base material still remains fully protected – even if small areas of minor damage do appear on the surface over time.
-                                </li>
-
-                            </ul>
+                            <div className={`read-more ${open === true ? 'active' : null}`}>
+                                <p>
+                                    Perfectly thought-out:ِ drum brake combines proven components into a successful system. Efficient, profitable and virtually maintenance-free – the SAF INTRADRUM is a winner with its powerful and precisely matched components and guarantees planning reliability right from the first kilometer.
+                                </p>
+                                <p>
+                                    SAF-HOLLAND® and BPW® offers pioneering 9-t air suspension systems with special product properties – purposefully optimized for specific transport requirements and challenging transport infrastructure.
+                                </p>
+                                <ul>
+                                    <li>
+                                        • Significantly lower heat transfer due to small contact areas between the INTEGRAL disc and wheel hub
+                                    </li>
+                                    <li>
+                                        • Targeted long-term corrosion protection also on hub caps and screw connections, wheel bolts and nuts
+                                    </li>
+                                    <li>
+                                        • The hub unit is a compact hub and bearings unit. It is fully factory adjusted and encapsulated the SAF/BPW
+                                    </li>
+                                    <li>
+                                        • With 15 large radiator-like ventilation cross-sections in the wheel flange, the INTEGRAL achieves at least 60% more ventilation cross-section compared to a design with closed wheel flange – depending on the size of the openings in the fitted wheels
+                                    </li>
+                                    <li>
+                                        • The specific shape of the flange disc made of a special alloy ensures not
+                                        only exact concentricity under all driving conditions – it also reduces
+                                        the umbrella effect and therefore prolongs the service life of the brake
+                                        disc and pads.
+                                    </li>
+                                    <li>
+                                        • Reduce the heat transfer from the disc to the hub unit and contribute to a thermal discharge of the complete head unit
+                                    </li>
+                                    <li>
+                                        • Shock absorber with damping characteristics designed for use in challenging road conditions
+                                    </li>
+                                    <li>
+                                        • Internal Air-Vent ventilation channels, cool the brake disc, avoid heat accumulation and support purposefully a low temperature management in the overall system
+                                    </li>
+                                    <li>
+                                        • Easier maintenance
+                                    </li>
+                                    <li>
+                                        • High chemical resistance
+                                    </li>
+                                    <li>
+                                        • less fuel consumption
+                                    </li>
+                                    <li>
+                                        • EThanks to the active cathodic corrosion protection combined with the zinc coating, the axle’s base material still remains fully protected – even if small areas of minor damage do appear on the surface over time.
+                                    </li>
+                                </ul>
+                            </div>
+                            <button className="readMore-btn" onClick={() => toggle()}>
+                                {open === true ? 'Read Less' : 'Read More'}
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -319,12 +330,8 @@ Color type According to RAL system
 
             <div className={`alternateHomeFeatured`}>
                 <div className={`contents ${styles['img-row']}`}>
-                    <h2 className="trailer-desc">
-                        Lighting System
-
-                    </h2>
                     <div style={{direction: 'rtl'}} className="img-container">
-                        <div className={`picture`}>
+                        <div className={`picture trailerImg`} style={{width: '50%'}}>
                             <Image
                                 src={"/assets/images/subcategory.jpg"}
                                 alt="سيستم زيربندی و محور"
@@ -332,6 +339,10 @@ Color type According to RAL system
                             />
                         </div>
                         <div style={{direction: 'ltr',textAlign: 'left'}} className="left-sec" >
+                            <h2 className="trailer-desc">
+                                Lighting System
+
+                            </h2>
                             <p>
                                 The lighting system of Mammut World trailers is provided by world-renowned brand such as ASPOCK® according to the ADR international standard.
                                 The most important features include the following:
@@ -354,7 +365,7 @@ Color type According to RAL system
                             <p>
                                 Supply Voltage is 24 volts and includes 7 pin sockets (in acc. with ISO 1185 and ISO3731) and 15 pin sockets (in acc. with ISO 12098) that covers the following:
                             </p>
-                            <ul>
+                            <ul className={`read-more ${open === true ? 'active' : null}`}>
                                 <li>
                                     • Front end-outline marker lamp*
                                 </li>
@@ -404,6 +415,9 @@ Color type According to RAL system
                             <p>
                                 This system is installed in accordance with international ECE-R48 standards.
                             </p>
+                            <button className="readMore-btn" onClick={() => toggle()}>
+                                {open === true ? 'Read Less' : 'Read More'}
+                            </button>
                         </div>
                     </div>
                 </div>

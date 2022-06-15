@@ -281,6 +281,11 @@ img {
 .enPage {
   direction: ltr;
   text-align: left;
+  .trailerImg{
+    @include sm{
+      width: 100% !important;
+    }
+  }
 
   > .alternateHomeFeatured.right .en_dir {
     flex-direction: row-reverse;
@@ -362,6 +367,18 @@ img {
 
   .faqCard .question h6 {
     font-weight: 500;
+  }
+  .homeGallery{
+    .title{
+      h2{
+        color: #fff !important;
+      }
+      h6{
+        span{
+          color: #fff !important;
+        }
+      }
+    }
   }
 }
 
@@ -6322,7 +6339,7 @@ header {
       h2 {
         font-weight: bold;
         color: $colorText;
-        font-size: 1.8rem;
+        font-size: 1.3rem;
         width: fit-content;
         margin: 1rem auto 2rem;
         text-align: center;
@@ -8501,7 +8518,7 @@ header {
 
 @media (max-width: 768px) {
   .homeCatalog {
-    padding: 3rem 0 !important;
+    padding: 0rem 0 !important;
   }
   .homePage .homeCatalog .contents .text h2 {
     font-size: 1rem;
