@@ -36,7 +36,7 @@ const TrailerEn = () => {
                 }
                 catalog="trailer-cataloug.pdf"
                 product="Trailer catalog"
-                image="/assets/images/trailer-catalog.png"
+                image="/assets/images/trailer-recatalog.webp"
                 btnTxt="ِDowmload"
                 catalogTxt="Download "
                 suffixTxt=" Mammut World"
@@ -175,13 +175,6 @@ Color type According to RAL system
             <div className={`alternateHomeFeatured`}>
                 <div className={`contents ${styles['img-row']}`}>
                     <div style={{direction: 'rtl'}} className="img-container">
-                        <div className={`picture trailerImg`} style={{width: '50%'}}>
-                            <Image
-                                src={"/assets/images/subcategory.jpg"}
-                                alt="سيستم زيربندی و محور"
-                                layout="fill"
-                            />
-                        </div>
                         <div style={{direction: 'ltr',textAlign: 'left'}} className="left-sec" >
                             <h2 className="trailer-desc">
                                 Brake System Capabilities
@@ -201,18 +194,30 @@ Color type According to RAL system
                                 </li>
                             </ul>
                             <br/>
-                            <p>
-                                The electro-pneumatic control system replaces the purely pneumatic control of a conventional braking system by using the ECU to control solenoids integrated in the brake module. Therefore, the functions of individual components in an otherwise complicated brake control system can be functionally combined and provide enhanced pressure control characteristics.
-                            </p>
-                            <p>
-                                ABS prevents locking of the wheels when braking, while ASR (traction control system TCS) ensures that, when accelerating, the wheels on the drive axle do not spin, thereby ensuring optimal traction in all driving conditions.
-                            </p>
-                            <p>
-                                Roll-over accidents normally occur when the lateral acceleration acting upon a vehicle exceeds a vehicle-specific critical limit. For example, the lateral acceleration upper limit depends on the height of the center of gravity, which can vary not only from one vehicle to the next, but also in the same vehicle depending on the load and the loading state. Moreover, the vehicle speed and the geometric data of each vehicle have a significant effect on the limit value of the lateral acceleration. In vehicles with a fairly high center of gravity, such as some tanker vehicles, the critical roll-over lateral acceleration is lower than with a flatbed trailer that is used for transporting steel plates. However, the vehicle speed when cornering is a critical element as the developed lateral acceleration varies with the square of the vehicle speed therefore small changes in speed have a major impact on lateral acceleration. Often in semi-trailer combinations it is difficult, if not impossible, for the driver to be aware of how close the trailer is to roll-over. This is relevant when considering the characteristics of modern towing vehicles that provide high levels of driver comfort. Even if the driver did become aware of a potential roll-over it is very likely that it would be too late for him to intervene in time to reduce the vehicle speed enough to avoid an accident.
-                            </p>
-                            <p>
-                                Finally, this system reduces the uniform consumption and abrasion of the Wear pads by distributing the braking force and ultimately reduces costs.
-                            </p>
+                            <div className={`read-more ${open === true ? 'active' : null}`}>
+                                <p>
+                                    The electro-pneumatic control system replaces the purely pneumatic control of a conventional braking system by using the ECU to control solenoids integrated in the brake module. Therefore, the functions of individual components in an otherwise complicated brake control system can be functionally combined and provide enhanced pressure control characteristics.
+                                </p>
+                                <p>
+                                    ABS prevents locking of the wheels when braking, while ASR (traction control system TCS) ensures that, when accelerating, the wheels on the drive axle do not spin, thereby ensuring optimal traction in all driving conditions.
+                                </p>
+                                <p>
+                                    Roll-over accidents normally occur when the lateral acceleration acting upon a vehicle exceeds a vehicle-specific critical limit. For example, the lateral acceleration upper limit depends on the height of the center of gravity, which can vary not only from one vehicle to the next, but also in the same vehicle depending on the load and the loading state. Moreover, the vehicle speed and the geometric data of each vehicle have a significant effect on the limit value of the lateral acceleration. In vehicles with a fairly high center of gravity, such as some tanker vehicles, the critical roll-over lateral acceleration is lower than with a flatbed trailer that is used for transporting steel plates. However, the vehicle speed when cornering is a critical element as the developed lateral acceleration varies with the square of the vehicle speed therefore small changes in speed have a major impact on lateral acceleration. Often in semi-trailer combinations it is difficult, if not impossible, for the driver to be aware of how close the trailer is to roll-over. This is relevant when considering the characteristics of modern towing vehicles that provide high levels of driver comfort. Even if the driver did become aware of a potential roll-over it is very likely that it would be too late for him to intervene in time to reduce the vehicle speed enough to avoid an accident.
+                                </p>
+                                <p>
+                                    Finally, this system reduces the uniform consumption and abrasion of the Wear pads by distributing the braking force and ultimately reduces costs.
+                                </p>
+                            </div>
+                            <button className="readMore-btn" onClick={() => toggle()}>
+                                {open === true ? 'Read Less' : 'Read More'}
+                            </button>
+                        </div>
+                        <div className={`picture trailerImg`} style={{width: '50%'}}>
+                            <Image
+                                src={"/assets/images/lightning.jpg"}
+                                alt="سيستم زيربندی و محور"
+                                layout="fill"
+                            />
                         </div>
                     </div>
                 </div>
@@ -223,7 +228,7 @@ Color type According to RAL system
                     <div style={{direction: 'rtl'}} className="img-container">
                         <div className={`picture trailerImg`} style={{width: '50%'}}>
                             <Image
-                                src={"/assets/images/subcategory.jpg"}
+                                src={"/assets/images/lights.jpeg"}
                                 alt="سيستم زيربندی و محور"
                                 layout="fill"
                             />
@@ -328,13 +333,6 @@ Color type According to RAL system
             <div className={`alternateHomeFeatured`}>
                 <div className={`contents ${styles['img-row']}`}>
                     <div style={{direction: 'rtl'}} className="img-container">
-                        <div className={`picture trailerImg`} style={{width: '50%'}}>
-                            <Image
-                                src={"/assets/images/subcategory.jpg"}
-                                alt="سيستم زيربندی و محور"
-                                layout="fill"
-                            />
-                        </div>
                         <div style={{direction: 'ltr',textAlign: 'left'}} className="left-sec" >
                             <h2 className="trailer-desc">
                                 Lighting System
@@ -415,6 +413,13 @@ Color type According to RAL system
                             <button className="readMore-btn" onClick={() => toggle()}>
                                 {open === true ? 'Read Less' : 'Read More'}
                             </button>
+                        </div>
+                        <div className={`picture trailerImg`} style={{width: '50%'}}>
+                            <Image
+                                src={"/assets/images/lightning.jpg"}
+                                alt="سيستم زيربندی و محور"
+                                layout="fill"
+                            />
                         </div>
                     </div>
                 </div>
