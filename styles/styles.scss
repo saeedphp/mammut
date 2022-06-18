@@ -1728,6 +1728,11 @@ header {
       }
     }
   }
+  .homeIntro:nth-child(odd){
+    .backward-color{
+      display: none;
+    }
+  }
   .homeGallery {
     .title {
       h2 {
