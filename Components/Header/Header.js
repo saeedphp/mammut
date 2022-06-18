@@ -1,7 +1,8 @@
 import HeaderTop from "./HeaderTop";
 import HeaderBottom from "./HeaderBottom";
-import { useEffect } from "react";
+import {Fragment, useEffect} from "react";
 import Link from "next/link";
+import Script from "next/script";
 
 export default function Header(props) {
   const prefix = props.prefix;
@@ -103,10 +104,12 @@ export default function Header(props) {
     }, []);
 
     return (
-      <header>
-        <HeaderTop prefix={prefix} />
-        <HeaderBottom prefix={prefix} />
-      </header>
+      <Fragment>
+        <header>
+          <HeaderTop prefix={prefix} />
+          <HeaderBottom prefix={prefix} />
+        </header>
+      </Fragment>
     );
   }
 }

@@ -34,12 +34,12 @@ const TrailerEn = () => {
                 text={
                     "See the variety of Mammut World trailers."
                 }
-                catalog="trailer-cataloug.pdf"
-                product="Trailer catalog"
+                catalog=""
+                product="Semi-trailers Catalog"
                 image="/assets/images/trailer-recatalog.webp"
                 btnTxt="ِDowmload"
-                catalogTxt="Download "
-                suffixTxt=" Mammut World"
+                catalogTxt="Download Mammut world "
+                suffixTxt=""
             />
             <HomeContact
                 title="Contact us"
@@ -226,14 +226,7 @@ Color type According to RAL system
             <div className={`alternateHomeFeatured`}>
                 <div className={`contents ${styles['img-row']}`}>
                     <div style={{direction: 'rtl'}} className="img-container">
-                        <div className={`picture trailerImg`} style={{width: '50%'}}>
-                            <Image
-                                src={"/assets/images/lights.jpeg"}
-                                alt="سيستم زيربندی و محور"
-                                layout="fill"
-                            />
-                        </div>
-                        <div style={{direction: 'ltr',textAlign: 'left'}} className="left-sec" >
+                        <div style={{direction: 'ltr',textAlign: 'left', width: '100%'}} className="left-sec" >
                             <h2 className="trailer-desc">
                                 Axle System
                             </h2>
@@ -333,7 +326,7 @@ Color type According to RAL system
             <div className={`alternateHomeFeatured`}>
                 <div className={`contents ${styles['img-row']}`}>
                     <div style={{direction: 'rtl'}} className="img-container">
-                        <div style={{direction: 'ltr',textAlign: 'left'}} className="left-sec" >
+                        <div style={{direction: 'ltr',textAlign: 'left', width: '100%'}} className="left-sec" >
                             <h2 className="trailer-desc">
                                 Lighting System
 
@@ -413,13 +406,6 @@ Color type According to RAL system
                             <button className="readMore-btn" onClick={() => toggle()}>
                                 {open === true ? 'Read Less' : 'Read More'}
                             </button>
-                        </div>
-                        <div className={`picture trailerImg`} style={{width: '50%'}}>
-                            <Image
-                                src={"/assets/images/lightning.jpg"}
-                                alt="سيستم زيربندی و محور"
-                                layout="fill"
-                            />
                         </div>
                     </div>
                 </div>

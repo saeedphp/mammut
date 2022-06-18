@@ -10,7 +10,7 @@ import EnPanelHome from "../en";
 const VendorsListPage = () => {
   const router = useRouter();
   const [filter, setFiler] = useState({ array: [] });
-  vendors.sort((a, b) => (a.state > b.state ? 1 : b.state > a.state ? -1 : 0));
+  vendors.sort((a, b) => (a.state > b.state ? -1 : b.state > a.state ? 1 : 0));
 
   const states = Array.from(new Set(vendors.map((v) => v.state)));
   const changeFilter = (s) => {

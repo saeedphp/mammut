@@ -6,7 +6,6 @@ import googleAnalytics from "../public/assets/scripts/googleAnalytics";
 import Layout from "../Components/Layout";
 import EnLayout from "../Components/EnLayout";
 import Loader from "../Components/Loader";
-
 import Script from "next/script";
 
 import { useState, useEffect, useContext } from "react";

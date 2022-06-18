@@ -7,6 +7,7 @@ import Refrigeration from "../Components/blog/refrigeration";
 import CarExhbiti from "../Components/blog/car-exhbiti";
 import SmartTrailer from "../Components/blog/smart-trailer";
 import ViewCars from "../Components/blog/view-cars";
+import Ladies from "../Components/blog/ladies";
 
 export default [
 /*  {
@@ -177,6 +178,17 @@ lb/ft
     img: "1.jpg",
   },*/
   {
+    id: 15,
+    category: "اخبار",
+    subcategory: "",
+    title: "حضور ارزنده بانوان پرتلاش در دنيای ماموت",
+    time: "",
+    date: "28 خرداد 1401",
+    expert: "یکی از دستاوردهای ما در دنيای ماموت، ایجاد بستری امن برای بانوانی سخت کوش، آینده نگر و متعهد به کار است تا بتوانیم در کنار...",
+    contentP1: <Ladies />,
+    img: 'ladies.jpg',
+  },
+  {
     id: 14,
     category: "اخبار",
     subcategory: "",
@@ -184,7 +196,7 @@ lb/ft
     time: "",
     date: "9 خرداد 1401",
     expert: "وزير صمت در سومين بازديد خود از شركت‌های خودروسازی در استان البرز، از دنيای ماموت يكی از بزرگترين توليدكنندگان انواع",
-    contentP1: <ViewCars />,
+    contentP1: <ViewdCars />,
     img: 'samt-vendor.webp',
   },
   {
