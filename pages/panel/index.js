@@ -11,10 +11,15 @@ import WhyProduct from "../../Components/Home/WhyProduct";
 import HomeIntro from "../../Components/Home/HomeIntro";
 import HomeCover from "../../Components/Home/HomeCover";
 import HomeGallery from "../../Components/Home/HomeGallery";
+import Head from "next/head";
 
 export default function Home() {
     return (
         <div className="homePage homePanel">
+                <Head>
+                    <meta name="انواع ساندویچ پانل، لیست قیمت و سفارش| کیفیت تضمینی | دنیای ماموت" />
+                        <meta name="description" content="دنیای ماموت بزرگترین تولید کننده انواع ساندویچ پانل در خاورمیانه، تولید فروش نصب و اجرا با کیفیت تضمینی" />
+                </Head>
             <NextSeo title="ساندویچ پانل‌های دنیای ماموت"/>
             <HomeBanner
                 persianSlogan={{

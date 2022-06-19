@@ -107,6 +107,36 @@ const TrailerEn = () => {
                 ]}
             />
 
+            <HomeFeatured
+                name="  Painting Process- Surface Preparation "
+                features={["One of the steps related to the Painting of the product is the shot Blasting process according to SA 2.5 / Epoxy sub-coat.\n","Shot Blasting is ideal for removing paint, deburring, eradicating sand from castings, and provides an excellent key for painting. All of processes are carried out by skilled and trained engineers. \n","Finally:\n", "Polyurethane coating as per customer requirement\n", "Color type According to RAL system"]}
+                direction="right"
+                items={[
+                    "color-trailer.jpg",
+                ]}
+            />
+
+            <HomeFeatured
+                name="  Assembly Line Production"
+                features={[" In this stage, all assembly parts on the product are installed as follows: \n", "Braking system - Electrical system - Plywood Parts", "Curtain (Polymer) Parts - Wheel alignment test - Mudguard parts ", "End of line test - Rolling brake test - Accessories "]}
+                direction="left"
+                items={[
+                    "montazh-1.jpg",
+                    "montazh-2.jpg",
+                    "montazh-3.jpg",
+                    "montazh-4.jpg",
+                ]}
+            />
+
+            <HomeFeatured
+                name="  Final Control "
+                features={["In this Stage , Color and all the accessories are controlled by quality control specialists.\n"]}
+                direction="right"
+                items={[
+                    "final-check.jpg",
+                ]}
+            />
+
             <div className={`alternateHomeFeatured`}>
                 <div className={`contents ${styles['img-row']}`}>
                     <div style={{direction: 'rtl'}} className="img-container">
@@ -119,22 +149,43 @@ const TrailerEn = () => {
                         </div>
                         <div style={{direction: 'ltr',textAlign: 'left'}} className="left-sec" >
                             <h2 className="trailer-desc">
-                                Painting Process- Surface Preparation
+                                Brake System Capabilities
                             </h2>
                             <p>
-                                One of the steps related to the Painting of the product is the shot Blasting process according to SA 2.5 / Epoxy sub-coat.
-                                Shot Blasting is ideal for removing paint, deburring, eradicating sand from castings, and provides an excellent key for painting. All of processes are carried out by skilled and trained engineers.
-                                <br />
-                                Finally:
+                                The Braking System used in Mammut World has the following capabilities:
                             </p>
                             <ul>
                                 <li>
-                                    • Polyurethane coating as per customer requirement
+                                    • EBS braking system (Electronic braking system)
                                 </li>
                                 <li>
-                                    • Color type According to RAL system
+                                    • ABS (anti-lock braking system)
+                                </li>
+                                <li>
+                                    . RSP (Roll Stability Control).
                                 </li>
                             </ul>
+                            <p>
+                                The electro-pneumatic control system replaces the purely pneumatic control of a conventional braking system by using the ECU to control solenoids integrated in the brake module. Therefore, the functions of individual components in an otherwise complicated brake control system can be functionally combined and provide enhanced pressure control characteristics.
+                            </p>
+                            <p>
+                                ABS prevents locking of the wheels when braking, while ASR (traction control system TCS) ensures that, when accelerating, the wheels on the drive axle do not spin, thereby ensuring optimal traction in all driving conditions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className={`alternateHomeFeatured`}>
+                <div className={`contents ${styles['img-row']}`}>
+                    <div style={{direction: 'rtl'}} className="img-container">
+                        <div style={{direction: 'ltr',textAlign: 'left', width: '100%'}} className="left-sec" >
+                            <p>
+                                Roll-over accidents normally occur when the lateral acceleration acting upon a vehicle exceeds a vehicle-specific critical limit. For example, the lateral acceleration upper limit depends on the height of the center of gravity, which can vary not only from one vehicle to the next, but also in the same vehicle depending on the load and the loading state. Moreover, the vehicle speed and the geometric data of each vehicle have a significant effect on the limit value of the lateral acceleration. In vehicles with a fairly high center of gravity, such as some tanker vehicles, the critical roll-over lateral acceleration is lower than with a flatbed trailer that is used for transporting steel plates. However, the vehicle speed when cornering is a critical element as the developed lateral acceleration varies with the square of the vehicle speed therefore small changes in speed have a major impact on lateral acceleration. Often in semi-trailer combinations it is difficult, if not impossible, for the driver to be aware of how close the trailer is to roll-over. This is relevant when considering the characteristics of modern towing vehicles that provide high levels of driver comfort. Even if the driver did become aware of a potential roll-over it is very likely that it would be too late for him to intervene in time to reduce the vehicle speed enough to avoid an accident.
+                            </p>
+                            <p>
+                                Finally, this system reduces the uniform consumption and abrasion of the Wear pads by distributing the braking force and ultimately reduces costs.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -145,58 +196,46 @@ const TrailerEn = () => {
                     <div style={{direction: 'rtl'}} className="img-container">
                         <div style={{direction: 'ltr',textAlign: 'left'}} className="left-sec" >
                             <h2 className="trailer-desc">
-                                Assembly Line Production
+                                Axle System
                             </h2>
                             <p>
-                                In this stage, all assembly parts on the product are installed as follows:
+                                The axles used in the Mammut world are from two world-renowned brands as follows:
                             </p>
                             <ul>
                                 <li>
-                                    • Braking system
+                                    1-SAF
                                 </li>
                                 <li>
-                                    • Electrical system
-                                </li>
-                                <li>
-                                    • Plywood Parts
-                                </li>
-                                <li>
-                                    • Curtain (Polymer) Parts
-                                </li>
-                                <li>
-                                    • Wheel alignment test
-                                </li>
-                                <li>
-                                    • Mudguard parts
-                                </li>
-                                <li>
-                                    • End of line test
-                                </li>
-                                <li>
-                                    • Rolling brake test
-                                </li>
-                                <li>
-                                    • Accessories
+                                    2-BPW
                                 </li>
                             </ul>
                             <br/>
-                            <div className={`read-more ${open === true ? 'active' : null}`}>
+                            <div>
                                 <p>
-                                    The electro-pneumatic control system replaces the purely pneumatic control of a conventional braking system by using the ECU to control solenoids integrated in the brake module. Therefore, the functions of individual components in an otherwise complicated brake control system can be functionally combined and provide enhanced pressure control characteristics.
+                                    Both Brands are globally 	leading manufacturer of intelligent running gear system for semi-trailers.
                                 </p>
                                 <p>
-                                    ABS prevents locking of the wheels when braking, while ASR (traction control system TCS) ensures that, when accelerating, the wheels on the drive axle do not spin, thereby ensuring optimal traction in all driving conditions.
+                                    All 9t air suspension system with optimized Disc/Drum brake technology and an exemplary price-performance ratio.
                                 </p>
                                 <p>
-                                    Roll-over accidents normally occur when the lateral acceleration acting upon a vehicle exceeds a vehicle-specific critical limit. For example, the lateral acceleration upper limit depends on the height of the center of gravity, which can vary not only from one vehicle to the next, but also in the same vehicle depending on the load and the loading state. Moreover, the vehicle speed and the geometric data of each vehicle have a significant effect on the limit value of the lateral acceleration. In vehicles with a fairly high center of gravity, such as some tanker vehicles, the critical roll-over lateral acceleration is lower than with a flatbed trailer that is used for transporting steel plates. However, the vehicle speed when cornering is a critical element as the developed lateral acceleration varies with the square of the vehicle speed therefore small changes in speed have a major impact on lateral acceleration. Often in semi-trailer combinations it is difficult, if not impossible, for the driver to be aware of how close the trailer is to roll-over. This is relevant when considering the characteristics of modern towing vehicles that provide high levels of driver comfort. Even if the driver did become aware of a potential roll-over it is very likely that it would be too late for him to intervene in time to reduce the vehicle speed enough to avoid an accident.
+                                    The unique design principle prolongs the service life of the pads and the disc and, at the same time, achieves:
                                 </p>
-                                <p>
-                                    Finally, this system reduces the uniform consumption and abrasion of the Wear pads by distributing the braking force and ultimately reduces costs.
-                                </p>
+                                <ul>
+                                    <li>
+                                        more km – less wear
+                                    </li>
+                                    <li>
+                                        more planning reliability
+                                    </li>
+                                    <li>
+                                        more efficiency
+                                    </li>
+                                    <li>
+                                        more economic efficiency
+                                    </li>
+                                </ul>
                             </div>
-                            <button className="readMore-btn" onClick={() => toggle()}>
-                                {open === true ? 'Read Less' : 'Read More'}
-                            </button>
+
                         </div>
                         <div className={`picture trailerImg`} style={{width: '50%'}}>
                             <Image
@@ -213,127 +252,18 @@ const TrailerEn = () => {
                 <div className={`contents ${styles['img-row']}`}>
                     <div style={{direction: 'rtl'}} className="img-container">
                         <div style={{direction: 'ltr',textAlign: 'left', width: '100%'}} className="left-sec" >
-                            <h2 className="trailer-desc">
-                                Final Control
-                            </h2>
-                            <p>
-                                In this Stage , Color and all the accessories are controlled by quality control specialists.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div className={`alternateHomeFeatured`}>
-                <div className={`contents ${styles['img-row']}`}>
-                    <div style={{direction: 'rtl'}} className="img-container">
-                        <div style={{direction: 'ltr',textAlign: 'left', width: '100%'}} className="left-sec" >
-                            <h2 className="trailer-desc">
-                                Brake System Capabilities
-                            </h2>
-                            <p>
-                                The Braking System used in Mammut World has the following capabilities:
-                            </p>
-                            <ul>
-                                <li>
-                                    ⦁	EBS braking system (Electronic braking system)
-
-                                </li>
-                                <li>
-                                    ⦁	ABS (anti-lock braking system)
-                                </li>
-                                <li>
-                                    ⦁	RSP (Roll Stability Control).
-                                </li>
-                            </ul>
-                            <p>
-                                The electro-pneumatic control system replaces the purely pneumatic control of a conventional braking system by using the ECU to control solenoids integrated in the brake module. Therefore, the functions of individual components in an otherwise complicated brake control system can be functionally combined and provide enhanced pressure control characteristics.
-                            </p>
-                            <p>
-                                ABS prevents locking of the wheels when braking, while ASR (traction control system TCS) ensures that, when accelerating, the wheels on the drive axle do not spin, thereby ensuring optimal traction in all driving conditions.
-                            </p>
-                            <p>
-                                Roll-over accidents normally occur when the lateral acceleration acting upon a vehicle exceeds a vehicle-specific critical limit. For example, the lateral acceleration upper limit depends on the height of the center of gravity, which can vary not only from one vehicle to the next, but also in the same vehicle depending on the load and the loading state. Moreover, the vehicle speed and the geometric data of each vehicle have a significant effect on the limit value of the lateral acceleration. In vehicles with a fairly high center of gravity, such as some tanker vehicles, the critical roll-over lateral acceleration is lower than with a flatbed trailer that is used for transporting steel plates. However, the vehicle speed when cornering is a critical element as the developed lateral acceleration varies with the square of the vehicle speed therefore small changes in speed have a major impact on lateral acceleration. Often in semi-trailer combinations it is difficult, if not impossible, for the driver to be aware of how close the trailer is to roll-over. This is relevant when considering the characteristics of modern towing vehicles that provide high levels of driver comfort. Even if the driver did become aware of a potential roll-over it is very likely that it would be too late for him to intervene in time to reduce the vehicle speed enough to avoid an accident.
-                            </p>
-                            <p>
-                                Finally, this system reduces the uniform consumption and abrasion of the Wear pads by distributing the braking force and ultimately reduces costs.
-                            </p>
-                            <br/>
-                            <div className={`read-more ${open === true ? 'active' : null}`}>
-                                <p>
-                                    The electro-pneumatic control system replaces the purely pneumatic control of a conventional braking system by using the ECU to control solenoids integrated in the brake module. Therefore, the functions of individual components in an otherwise complicated brake control system can be functionally combined and provide enhanced pressure control characteristics.
-                                </p>
-                                <p>
-                                    ABS prevents locking of the wheels when braking, while ASR (traction control system TCS) ensures that, when accelerating, the wheels on the drive axle do not spin, thereby ensuring optimal traction in all driving conditions.
-                                </p>
-                                <p>
-                                    Roll-over accidents normally occur when the lateral acceleration acting upon a vehicle exceeds a vehicle-specific critical limit. For example, the lateral acceleration upper limit depends on the height of the center of gravity, which can vary not only from one vehicle to the next, but also in the same vehicle depending on the load and the loading state. Moreover, the vehicle speed and the geometric data of each vehicle have a significant effect on the limit value of the lateral acceleration. In vehicles with a fairly high center of gravity, such as some tanker vehicles, the critical roll-over lateral acceleration is lower than with a flatbed trailer that is used for transporting steel plates. However, the vehicle speed when cornering is a critical element as the developed lateral acceleration varies with the square of the vehicle speed therefore small changes in speed have a major impact on lateral acceleration. Often in semi-trailer combinations it is difficult, if not impossible, for the driver to be aware of how close the trailer is to roll-over. This is relevant when considering the characteristics of modern towing vehicles that provide high levels of driver comfort. Even if the driver did become aware of a potential roll-over it is very likely that it would be too late for him to intervene in time to reduce the vehicle speed enough to avoid an accident.
-                                </p>
-                                <p>
-                                    Finally, this system reduces the uniform consumption and abrasion of the Wear pads by distributing the braking force and ultimately reduces costs.
-                                </p>
-                            </div>
-                            <button className="readMore-btn" onClick={() => toggle()}>
-                                {open === true ? 'Read Less' : 'Read More'}
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div className={`alternateHomeFeatured`}>
-                <div className={`contents ${styles['img-row']}`}>
-                    <div style={{direction: 'rtl'}} className="img-container">
-                        <div style={{direction: 'ltr',textAlign: 'left', width: '100%'}} className="left-sec" >
-                            <h2 className="trailer-desc">
-                                Axle System
-                            </h2>
-                            <p>
-                                The axles used in the Mammut world are from two world-renowned brands as follows:
-                            </p>
-                            <ul>
-                                <li>
-                                    1-SAF
-                                </li>
-                                <li>
-                                    2-BPW
-                                </li>
-                            </ul>
-                            <p>
-                                Both Brands are globally 	leading manufacturer of intelligent running gear system for semi-trailers.
-                            </p>
-                            <p>
-                                All 9t air suspension system with optimized Disc/Drum brake technology and an exemplary price-performance ratio.
-                            </p>
-                            <p>
-                                The unique design principle prolongs the service life of the pads and the disc and, at the same time, achieves:
-                            </p>
-                            <ul>
-                                <li>
-                                    ⦁	more km – less wear
-                                </li>
-                                <li>
-                                    ⦁	more planning reliability
-                                </li>
-                                <li>
-                                    ⦁	more efficiency
-                                </li>
-                                <li>
-                                    ⦁	more economic efficiency
-                                </li>
-                            </ul>
                             <p>
                                 Perfectly thought-out:ِ drum brake combines proven components into a successful system. Efficient, profitable and virtually maintenance-free – the SAF INTRADRUM is a winner with its powerful and precisely matched components and guarantees planning reliability right from the first kilometer.
                             </p>
                             <p>
                                 SAF-HOLLAND® and BPW® offers pioneering 9-t air suspension systems with special product properties – purposefully optimized for specific transport requirements and challenging transport infrastructure.
                             </p>
-                            <ul>
+                            <ul className={`read-more ${open === true ? 'active' : null}`}>
                                 <li>
-                                    ⦁	Significantly lower heat transfer due to small contact areas between the INTEGRAL disc and wheel hub
+                                    Significantly lower heat transfer due to small contact areas between the INTEGRAL disc and wheel hub
                                 </li>
                                 <li>
-                                    ⦁	Targeted long-term corrosion protection also on hub caps and screw connections, wheel bolts and nut
+                                    ⦁	Targeted long-term corrosion protection also on hub caps and screw connections, wheel bolts and nuts
                                 </li>
                                 <li>
                                     ⦁	The hub unit is a compact hub and bearings unit. It is fully factory adjusted and encapsulated the SAF/BPW
@@ -369,6 +299,9 @@ const TrailerEn = () => {
                                     ⦁	Thanks to the active cathodic corrosion protection combined with the zinc coating, the axle’s base material still remains fully protected – even if small areas of minor damage do appear on the surface over time.
                                 </li>
                             </ul>
+                            <button className="readMore-btn" onClick={() => toggle()}>
+                                {open === true ? 'Reade Less' : 'Read More'}
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -377,7 +310,14 @@ const TrailerEn = () => {
             <div className={`alternateHomeFeatured`}>
                 <div className={`contents ${styles['img-row']}`}>
                     <div style={{direction: 'rtl'}} className="img-container">
-                        <div style={{direction: 'ltr',textAlign: 'left', width: '100%'}} className="left-sec" >
+                        <div className={`picture trailerImg`} style={{width: '50%'}}>
+                            <Image
+                                src={"/assets/images/lightning.jpg"}
+                                alt="سيستم زيربندی و محور"
+                                layout="fill"
+                            />
+                        </div>
+                        <div style={{direction: 'ltr',textAlign: 'left'}} className="left-sec" >
                             <h2 className="trailer-desc">
                                 Lighting System
                             </h2>
@@ -404,56 +344,60 @@ const TrailerEn = () => {
                             <p>
                                 Supply Voltage is 24 volts and includes 7 pin sockets (in acc. with ISO 1185 and ISO3731) and 15 pin sockets (in acc. with ISO 12098) that covers the following:
                             </p>
-                            <ul>
-                                <li>
-                                    ⦁	Front end-outline marker lamp*
-                                </li>
-                                <li>
-                                    ⦁	Front reflex reflector
-                                </li>
-                                <li>
-                                    ⦁	Front position (side) lamp
-                                </li>
-                                <li>
-                                    ⦁	Side reflex reflector
-                                </li>
-                                <li>
-                                    ⦁	Side-marker lamp
-                                </li>
-                                <li>
-                                    ⦁	Direction indicator lamps
-                                </li>
-                                <li>
-                                    ⦁	Rear tail lamp
-                                </li>
-                                <li>
-                                    ⦁	Stop lamp
-                                </li>
-                                <li>
-                                    ⦁	Reversing light
-                                </li>
-                                <li>
-                                    ⦁	Rear fog lamp
-                                </li>
-                                <li>
-                                    ⦁	End-outline marker lamp
-                                </li>
-                                <li>
-                                    ⦁	Rear reflex reflector
-                                </li>
-                                <li>
-                                    ⦁	Registration plate lamp
-                                </li>
-                                <li>
-                                    ⦁	Rear position (side) lamp
-                                </li>
-                                <li>
-                                    ⦁	High-mounted stop lamp
-                                </li>
-                            </ul>
-                            <p>
+
+                            <div className={`read-more ${open === true ? 'active' : null}`}>
+                                <ul>
+                                    <li>
+                                        ⦁	Front end-outline marker lamp*
+                                    </li>
+                                    <li>
+                                        ⦁	Front reflex reflector
+                                    </li>
+                                    <li>
+                                        ⦁	Front position (side) lamp
+                                    </li>
+                                    <li>
+                                        ⦁	Side reflex reflector
+                                    </li>
+                                    <li>
+                                        ⦁	Side-marker lamp
+                                    </li>
+                                    <li>
+                                        ⦁	Direction indicator lamps
+                                    </li>
+                                    <li>
+                                        ⦁	Rear tail lamp
+                                    </li>
+                                    <li>
+                                        ⦁	Stop lamp
+                                    </li>
+                                    <li>
+                                        ⦁	Reversing light
+                                    </li>
+                                    <li>
+                                        ⦁	Rear fog lamp
+                                    </li>
+                                    <li>
+                                        ⦁	End-outline marker lamp
+                                    </li>
+                                    <li>
+                                        ⦁	Rear reflex reflector
+                                    </li>
+                                    <li>
+                                        ⦁	Registration plate lamp
+                                    </li>
+                                    <li>
+                                        ⦁	Rear position (side) lamp
+                                    </li>
+                                    <li>
+                                        ⦁	High-mounted stop lamp
+                                    </li>
+                                </ul>
                                 This system is installed in accordance with international ECE-R48 standards.
-                            </p>
+                            </div>
+                            <button className="readMore-btn" onClick={() => toggle()}>
+                                {open === true ? 'Read Less' : 'Read More'}
+                            </button>
                         </div>
                     </div>
                 </div>
