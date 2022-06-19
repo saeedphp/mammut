@@ -5,10 +5,7 @@ import styles from "../trailer/home-feature.module.css";
 const Ladies = () => {
     return (
       <Fragment>
-          <div className={styles.video_wrapper}>
-              <ReactPlayer className={styles.video} controls={true} playing={false} url="https://mammutworld.faramoujwp.ir/wp-content/uploads/2022/06/خانم-هاي-توليد-10.mp4" />
-          </div>
-          <p style={{marginTop: '50px'}}>
+          <p>
               یکی از دستاوردهای ما در دنيای ماموت، ایجاد بستری امن برای بانوانی سخت کوش، آینده نگر و متعهد به کار است تا بتوانیم در کنار هم در مسیر بهترین شدن و یک پیشرفت بی انتها، قدم‌های موثری برداریم.
           </p>
           <p>
@@ -20,6 +17,9 @@ const Ladies = () => {
          <h2>
              دنيای ماموت دنیایی برای بهترین شدن
          </h2>
+          <div style={{marginTop: '50px'}} className={styles.video_wrapper}>
+              <ReactPlayer className={styles.video} controls={true} playing={false} url="https://mammutworld.faramoujwp.ir/wp-content/uploads/2022/06/خانم-هاي-توليد-10.mp4" />
+          </div>
       </Fragment>
     );
 };

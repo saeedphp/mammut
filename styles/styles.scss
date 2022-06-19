@@ -286,6 +286,13 @@ img {
       width: 100% !important;
     }
   }
+  .homeGallery{
+    .title{
+      h2{
+        color: #000 !important;
+      }
+    }
+  }
 
   > .alternateHomeFeatured.right .en_dir {
     flex-direction: row-reverse;
@@ -379,11 +386,11 @@ img {
   .homeGallery{
     .title{
       h2{
-        color: #fff !important;
+        color: #fff;
       }
       h6{
         span{
-          color: #fff !important;
+          color: #000 !important;
         }
       }
     }

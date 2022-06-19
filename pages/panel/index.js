@@ -51,7 +51,7 @@ export default function Home() {
         حرارتی فوق‌العاده پایین معادل یک دیوار آجری به ضخامت172 سانتی‌متر است كه
         همین امر منجر به صرفه جویی در مصرف انرژی و كاهش هزینه‌ها در طولانی مدت
         خواهد شد."
-                img= "blogs/sandwich/wall sandwich panel (2).jpg"
+                img= "farme-whyPanel.jpg"
             />
 
             <HomeNature
