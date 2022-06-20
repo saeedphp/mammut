@@ -142,7 +142,7 @@ const TrailerEn = () => {
                     <div style={{direction: 'rtl'}} className="img-container">
                         <div className={`picture trailerImg`} style={{width: '50%'}}>
                             <Image
-                                src={"/assets/images/subcategory.jpg"}
+                                src={"/assets/images/brake-system.jpg"}
                                 alt="سيستم زيربندی و محور"
                                 layout="fill"
                             />
@@ -239,7 +239,7 @@ const TrailerEn = () => {
                         </div>
                         <div className={`picture trailerImg`} style={{width: '50%'}}>
                             <Image
-                                src={"/assets/images/lightning.jpg"}
+                                src={"/assets/images/subcategory.jpg"}
                                 alt="سيستم زيربندی و محور"
                                 layout="fill"
                             />
