@@ -5,16 +5,30 @@ import flag from "../../public/assets/images/flag.png";
 
 export default function HeaderLeft({prefix}) {
 
+
     return (
         <div className="headerLeft">
             <div className="language left-lang">
-                <Link href="/panel">
-                    <a className="flag__lang">
-                        <div className="picture">
-                            <Image src={flag} alt="flag" layout="fill" />
-                        </div>
-                    </a>
-                </Link>
+                {prefix === "panel" ? (
+                    <Link href="/panel">
+                        <a className="flag__lang">
+                            <div className="picture">
+                                <Image src={flag} alt="flag" layout="fill" />
+                            </div>
+                        </a>
+                    </Link>
+                ) : null}
+                {
+                    prefix === "trailer" ? (
+                        <Link href="/trailer">
+                            <a className="flag__lang">
+                                <div className="picture">
+                                    <Image src={flag} alt="flag" layout="fill" />
+                                </div>
+                            </a>
+                        </Link>
+                    ) : null
+                }
             </div>
             <div className="onlineSale">
                 <a href="https://mammutworldpanel.iranecar.com/" target="_blank" rel="noreferrer">Online Sale</a>
