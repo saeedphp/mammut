@@ -8,6 +8,7 @@ import CarExhbiti from "../Components/blog/car-exhbiti";
 import SmartTrailer from "../Components/blog/smart-trailer";
 import ViewCars from "../Components/blog/view-cars";
 import Ladies from "../Components/blog/ladies";
+import PanelSetup from "../Components/blog/panel-setup";
 
 export default [
 /*  {
@@ -177,6 +178,17 @@ lb/ft
     قسمت وزنی پلی ال در نظر گرفتھ می شود.`,
     img: "1.jpg",
   },*/
+  {
+    id: 16,
+    category: "ساندويچ پانل",
+    subcategory: "",
+    title: "نحوه نصب و اجرای ساندويچ پانل سقفی",
+    time: "",
+    date: "31 خرداد 1401",
+    expert: "همانطور که مستحضر هستید پیش از خرید ساندویچ پانل میبایست اطلاعات کافی درباره نحوه نصب و اجرای آن داشته باشید که بوسیله آن...",
+    contentP1: <PanelSetup />,
+    img: 'panel-setup.jpg',
+  },
   {
     id: 15,
     category: "اخبار",

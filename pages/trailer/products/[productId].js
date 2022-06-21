@@ -39,7 +39,9 @@ function ProductDetailPage(props) {
         />
         <Video name={parent.name} videoPath={parent.video} type="link" />
         <div className="contents">
-          <Specs specs={currProduct.specs} />
+          {currProduct.specs != null && (
+              <Specs specs={currProduct.specs} />
+          )}
           <Gallery items={currProduct.pictures} />
           {/*{currProduct.attributes.length > 0 && (
             <Attributes items={currProduct.attributes} />

@@ -20,7 +20,7 @@ const data = [
         },
 
     },
-    {
+   /* {
         level: 1,
         parent: "edge",
         id: "edgeTanker",
@@ -259,17 +259,19 @@ const data = [
         `,
             },
         ],
-    },
+    },*/
     {
         level: 1,
         parent: "edge",
         id: "edgeContainer",
         name: "كانتینر بر سه محور",
         pictures: [
-            "trailers/edgeContainer1.jpeg",
-            "trailers/edgeContainer2.jpeg",
-            "trailers/edgeContainer3.JPG",
-            "trailers/edgeContainer4.JPG",
+            "trailers/edge-1.jpg",
+            "trailers/edge-2.jpg",
+            "trailers/edge-3.jpg",
+            "trailers/edge-4.jpg",
+            "trailers/edge-5.jpg",
+            "trailers/edge-6.jpg",
         ],
         intro: {
             title: "تريلر كفي دنياي ماموت ",
@@ -381,11 +383,11 @@ const data = [
         attributes: [
             {
                 icon: "/assets/images/landing/cardTrailer.png",
-                text: "استفاده از كانتینرلاك‌های استاندارد",
+                text: "ساختار استاندارد شاسی برای حمل انواع تانكر",
             },
             {
                 icon: "/assets/images/landing/cardTrailer.png",
-                text: "قابلیت حمل مخزن",
+                text: "وزن سبك در كنار استحكام شاسی",
             },
         ],
         usage: [
