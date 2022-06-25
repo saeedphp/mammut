@@ -11,12 +11,12 @@ const PanelSetup = () => {
             <p>
                 منظور از شاپ دراوینگ، نقشه‌هایی است که پیش از تولید ساندویچ پانل‌ها تهیه و در آن مشخصات پانل‌های تولیدی، سایز و ابعاد، طول و تعداد، جانمایی آن‌ها برروی نما و متریال مصرفی می‌باشد، این نقشه‌ها را از روی نقشه‌های سازه تهیه و پس از تایید مشاور کارفرما و یا ناظر ایشان جهت تولید به کارخانه ارسال می‌نمایند. عملیات نصب ساندویچ پانل از لحاظ زمانی بسیار سریع نصب شده و در مدت زمان کوتاهی پروژه آماده بهره برداری می‌گردد .
             </p>
+            <div style={{margin: '25px 0', width: '100%'}} className={styles.video_wrapper}>
+                <ReactPlayer className={styles.video} controls={true} playing={false} url="https://mammutworld.faramoujwp.ir/wp-content/uploads/2022/06/1655867894602-.mp4" />
+            </div>
             <p>
                 ساندویچ پانل‌های سقفی در موازات شیب سقف و بر روی پروفیل‌های سقفی (Purline) بوسیله پیچ سرمته گالوانیزه واشردار نصب شده و به دلیل مقطع تولیدی كه دارند (بصورت ذوزنقه ای شکل و گام دار) و کاملا آب بند نصب می‌گردند .
             </p>
-            {/*<div style={{marginTop: '50px'}} className={styles.video_wrapper}>
-                <ReactPlayer className={styles.video} controls={true} playing={false} url="https://mammutworld.faramoujwp.ir/wp-content/uploads/2022/06/خانم-هاي-توليد-10.mp4" />
-            </div>*/}
         </Fragment>
     )
 };

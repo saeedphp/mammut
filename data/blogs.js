@@ -9,6 +9,7 @@ import SmartTrailer from "../Components/blog/smart-trailer";
 import ViewCars from "../Components/blog/view-cars";
 import Ladies from "../Components/blog/ladies";
 import PanelSetup from "../Components/blog/panel-setup";
+import PanelSize from "../Components/blog/panel-size";
 
 export default [
 /*  {
@@ -179,8 +180,19 @@ lb/ft
     img: "1.jpg",
   },*/
   {
+    id: 17,
+    category: "ساندويچ پانل‌",
+    subcategory: "",
+    title: "انواع و ضخامت ورق ساندويچ پانل‌های دنيای ماموت",
+    time: "",
+    date: "4 تیر 1401",
+    expert: "در نگاه اول، تمامي ساندويچ پانل‌ها به يك شكل به نظر می‌رسند. امّا نكاتی بسيار مهم در كيفيت و مشخصات فنی مواد اوليه مورد...",
+    contentP1: <PanelSize />,
+    img: 'panelsize.jpg',
+  },
+  {
     id: 16,
-    category: "ساندويچ پانل",
+    category: "ساندويچ پانل‌",
     subcategory: "",
     title: "نحوه نصب و اجرای ساندويچ پانل سقفی",
     time: "",
